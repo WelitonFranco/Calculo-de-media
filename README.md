@@ -1,7 +1,7 @@
-Calculadora de Média de Notas
+#Calculadora de Média de Notas
 Esta é uma simples calculadora de média de notas desenvolvida como parte da Imersão Dev Alura - Aula 01. A aplicação permite que o usuário insira as notas de cinco avaliações e, em seguida, calcula a média, exibindo o resultado.
 
-Como Usar
+#Como Usar
 Clone este repositório para o seu ambiente local:
 
 bash
