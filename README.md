@@ -26,8 +26,9 @@ Tecnologias Utilizadas
 HTML
 CSS
 JavaScript
+
 Autor
-Seu Nome
+Weliton Franco
 
 Licença
 Este projeto está sob a Licença MIT.
