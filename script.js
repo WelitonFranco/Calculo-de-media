@@ -1,21 +1,17 @@
-// Declarando variáveis
-var nome = "Weliton";
-var sobrenome = "Franco";
-var primeiraNota = 10;
-var segundaNota = 9;
-var terceiraNota = 5;
-var quartaNota = 5;
-var quintaNota = 5;
+function calcularMedia() {
+    // Captura os valores das notas
+    var primeiraNota = parseFloat(document.getElementById('primeiraNota').value);
+    var segundaNota = parseFloat(document.getElementById('segundaNota').value);
+    var terceiraNota = parseFloat(document.getElementById('terceiraNota').value);
+    var quartaNota = parseFloat(document.getElementById('quartaNota').value);
+    var quintaNota = parseFloat(document.getElementById('quintaNota').value);
 
-// Calculando a média
-var notaFinal = (primeiraNota + segundaNota + terceiraNota + quartaNota + quintaNota) / 5;
+    // Calcula a média
+    var notaFinal = (primeiraNota + segundaNota + terceiraNota + quartaNota + quintaNota) / 5;
 
-// Fixando a nota para uma casa decimal
-var notaFixada = notaFinal.toFixed(1);
+    // Fixa a nota para uma casa decimal
+    var notaFixada = notaFinal.toFixed(1);
 
-// Verificando aprovação
-if (notaFinal >= 5) {
-    console.log(nome + " " + sobrenome + ", você foi aprovado. Sua nota é " + notaFixada);
-} else {
-    console.log(nome + " " + sobrenome + ", você foi reprovado. Sua nota é " + notaFixada);
+    // Atualiza o conteúdo do campo de resultado
+    document.getElementById('resultado').innerText = "Sua média é: " + notaFixada;
 }
